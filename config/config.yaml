@@ -1,0 +1,15 @@
+kafka:
+  bootstrap_servers:
+    - localhost:9092
+  topic: cdc-events
+  acks: all
+  retries: 3
+  max_in_flight_requests_per_connection: 1
+
+opensearch:
+  host: localhost
+  port: 9200
+  http_compress: true
+  use_ssl: false
+  verify_certs: false
+  ssl_show_warn: false
